@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="a">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <style>
+        .a {
+            width: 130px;
+            position: fixed;
+            z-index: 1;
+            top: 20px;
+            left: 10px;
+            background: #eee;
+            overflow-x: hidden;
+            padding: 8px 0;
+        }
+
+        .a a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #219679;
+        }
+
+        .a a:hover {
+            color: #064579;
+        }
+
+        .b {
+            margin-left: 140px;
+            font-size: 29px;
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-width: 450px) {
+            .a {
+                padding-top: 15px;
+            }
+
+            .a a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+    <div class="b">
+        <h2>Auto Sidebar</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A magni odio numquam sapiente soluta libero
+            aspernatur atque quae magnam delectus suscipit, eius, mollitia deleniti consequatur! Saepe atque error
+            temporibus ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis nihil molestias? Voluptatem in
+            molestiae exercitationem repellendus obcaecati asperiores dolore, doloremque deleniti dolor, ab minima nam
+            quisquam, rem ipsam ipsum.</p>
+    </div>
+</body>
+
+</html>
+<style>
+
+</style>
