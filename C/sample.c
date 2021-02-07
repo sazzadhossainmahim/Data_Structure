@@ -1,23 +1,19 @@
-/**
- * C program to create, initialize and use pointers
- */
-
 #include <stdio.h>
+#include <errno.h>
+#include <string.h>
 
-int main()
-{
-    int num = 10;
-    int * ptr;
+extern int errno ;
 
-    /* Stores the address of num to pointer type */
-    ptr = &num;
+int main () {
+   FILE *fp;
 
-    printf("Address of num = %d\n", &num);
-    printf("Value of num = %d\n", num);
-
-    printf("Address of ptr = %d\n", &ptr);
-    printf("Value of ptr = %d\n", ptr);
-    printf("Value pointed by ptr = %d\n", *ptr);
-
-    return 0;
+   fp = fopen("file.txt", "r");
+   if( fp == NULL ) {
+      fprintf(stderr, "Value of errno: %d\n", errno);
+      fprintf(stderr, "Error opening file: %s\n", strerror(errno));
+   } else {
+      fclose(fp);
+   }
+   
+   return(0);
 }
